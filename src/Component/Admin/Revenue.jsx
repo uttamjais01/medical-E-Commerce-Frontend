@@ -9,7 +9,7 @@ const Revenue = () => {
   useEffect(() => {
     const fetchRevenue = async () => {
       try {
-        const res = await axios.get('http://localhost:3000/product/revenue', {
+        const res = await axios.get('https://medical-e-commerce-backend-gamma.vercel.app/product/revenue', {
           withCredentials: true,
         })
         setRevenueCount(res.data.totalRevenue)

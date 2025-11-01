@@ -12,7 +12,7 @@ const GetProduct = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get('http://localhost:3000/product/', {
+        const res = await axios.get('https://medical-e-commerce-backend-gamma.vercel.app/product/', {
           withCredentials: true
         })
         setMedicineBlock(res.data.products)
@@ -26,7 +26,7 @@ const GetProduct = () => {
 
   const handleAddToCart = async (product) => {
   try {
-    const res = await axios.post('http://localhost:3000/product/cart', {
+    const res = await axios.post('https://medical-e-commerce-backend-gamma.vercel.app/product/cart', {
       productId: product._id,
       quantity: 1
     }, {

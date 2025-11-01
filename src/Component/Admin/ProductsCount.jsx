@@ -9,7 +9,7 @@ const ProductsCount = () => {
     useEffect(()=>{
         const fetchProductCount = async () => {
             try {
-                const res = await axios.get('http://localhost:3000/product/countProduct', {
+                const res = await axios.get('https://medical-e-commerce-backend-gamma.vercel.app/product/countProduct', {
                     withCredentials: true
                 })
                 setProductCount(res.data.totalProduct)

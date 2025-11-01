@@ -12,7 +12,7 @@ const CategoryProducts = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/product/category/${categoryId}`);
+        const res = await axios.get(`https://medical-e-commerce-backend-gamma.vercel.app/product/category/${categoryId}`);
         setProducts(res.data);
       } catch (err) {
         console.error(err);

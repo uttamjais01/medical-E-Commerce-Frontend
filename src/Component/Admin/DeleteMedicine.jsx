@@ -8,7 +8,7 @@ const DeleteMedicine =({ medicineId })=> {
   const navigate = useNavigate()
   const handleDelete = async ()=>{
     try {
-    const res = await axios.delete(`http://localhost:3000/product/delete/${medicineId}`,{
+    const res = await axios.delete(`https://medical-e-commerce-backend-gamma.vercel.app/product/delete/${medicineId}`,{
       withCredentials: true
     })
     toast.success(res.data.message)

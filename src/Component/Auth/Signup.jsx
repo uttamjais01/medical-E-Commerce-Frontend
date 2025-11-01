@@ -25,7 +25,7 @@ const Signup = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post('http://localhost:3000/user/', formData, {
+      const res = await axios.post('https://medical-e-commerce-backend-gamma.vercel.app/user/', formData, {
         withCredentials: true,
       });
 

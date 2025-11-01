@@ -12,7 +12,7 @@ const GetProductById = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/product/${productId}`);
+        const res = await axios.get(`https://medical-e-commerce-backend-gamma.vercel.app/product/${productId}`);
         setProduct(res.data);
       } catch (err) {
         console.error(err);

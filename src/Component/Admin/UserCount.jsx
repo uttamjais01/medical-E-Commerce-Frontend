@@ -9,7 +9,7 @@ const UserCount = () => {
     useEffect(()=>{
         const fetchUserCount = async()=>{
             try {
-                const res = await axios.get('http://localhost:3000/user/count',{
+                const res = await axios.get('https://medical-e-commerce-backend-gamma.vercel.app/user/count',{
                     withCredentials: true
                 })
                 setUserCount(res.data.totalUsers)

@@ -77,7 +77,7 @@ const AddMedicine = () => {
     })
 
     try {
-      const res = await axios.post('http://localhost:3000/product/add', data, {
+      const res = await axios.post('https://medical-e-commerce-backend-gamma.vercel.app/product/add', data, {
         withCredentials: true,
         headers: {
           'Content-Type': 'multipart/form-data'

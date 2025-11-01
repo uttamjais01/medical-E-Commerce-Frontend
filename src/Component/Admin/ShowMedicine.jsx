@@ -21,7 +21,7 @@ const handleDeleteBlock = (id) => {
   useEffect(() => {
     const AllMedicine = async () => {
       try {
-        const res = await axios.get('http://localhost:3000/product/', {
+        const res = await axios.get('https://medical-e-commerce-backend-gamma.vercel.app/product/', {
           withCredentials: true
         })
         setMedicineBlock(res.data.products)

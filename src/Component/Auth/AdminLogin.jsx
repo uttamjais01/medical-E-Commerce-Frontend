@@ -25,7 +25,7 @@ const AdminLogin = () => {
     e.preventDefault()
     setLoading(true)
     try {
-      const res = await axios.post('http://localhost:3000/admin/login', formData ,{
+      const res = await axios.post('https://medical-e-commerce-backend-gamma.vercel.app/admin/login', formData ,{
         withCredentials: true
       }) 
       toast.success(res.data.message)

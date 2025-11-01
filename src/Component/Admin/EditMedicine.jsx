@@ -20,7 +20,7 @@ const EditMedicine = ({ medicineId }) => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/product/getProduct/${medicineId}`, {
+        const res = await axios.get(`https://medical-e-commerce-backend-gamma.vercel.app/product/getProduct/${medicineId}`, {
           withCredentials: true
         })
         const product = res.data
@@ -71,7 +71,7 @@ const EditMedicine = ({ medicineId }) => {
 
     try {
       const res = await axios.put(
-        `http://localhost:3000/product/update/${medicineId}`,
+        `https://medical-e-commerce-backend-gamma.vercel.app/product/update/${medicineId}`,
         data,
         {
           withCredentials: true,

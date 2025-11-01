@@ -16,7 +16,7 @@ const HomePage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const res = await axios.post('http://localhost:3000/subscribe', formData, {
+      const res = await axios.post('https://medical-e-commerce-backend-gamma.vercel.app/subscribe', formData, {
         withCredentials: true,
       })
       toast.success(res.data.success)

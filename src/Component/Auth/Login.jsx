@@ -22,7 +22,7 @@ const Login = () => {
     e.preventDefault()
     setLoading(true)
     try {
-      const res = await axios.post('http://localhost:3000/user/login', formData,{
+      const res = await axios.post('https://medical-e-commerce-backend-gamma.vercel.app/user/login', formData,{
         withCredentials: true 
       })
       toast.success(res.data.success)

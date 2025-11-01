@@ -13,7 +13,7 @@ const Navbar = () => {
   const admin = useSelector((state) => state.admin.admin)
   const handleLogout =  async ( )=>{
     try {
-     const res = await axios.get('http://localhost:3000/admin/logout', {
+     const res = await axios.get('https://medical-e-commerce-backend-gamma.vercel.app/admin/logout', {
         withCredentials: true 
       })
       dispatch(clearAdmin())

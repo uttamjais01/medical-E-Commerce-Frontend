@@ -12,7 +12,7 @@ const GetCart = () => {
             try {
                 
             
-            const res = await axios.get('http://localhost:3000/product/cart/items',{
+            const res = await axios.get('https://medical-e-commerce-backend-gamma.vercel.app/product/cart/items',{
                 withCredentials: true 
             })
             setMedicineBlock( res.data.cartItems)
