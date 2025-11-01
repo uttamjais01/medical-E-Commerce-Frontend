@@ -11,7 +11,7 @@ import AdminDashboard from './Component/Admin/AdminDashboard'
 import GetProduct from './Component/User/GetProduct'
 import CategoryProducts from './Component/User/CategoryProducts'
 import GetProductById from './Component/User/GetProductById'
-import GetCart from './Component/User/getCart'
+import GetCart from './Component/User/GetCart'
 
 function App() {
   
