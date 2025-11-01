@@ -35,7 +35,7 @@ const HomePage = () => {
           Join our Newsletter for $10 Off
         </h1>
         <h2 className="text-gray-500 mt-4 text-lg sm:text-xl">
-          Register now to get the latest updates on promotions & coupons
+          Register now to get the updates on promotions & coupons
         </h2>
       </div>
 
